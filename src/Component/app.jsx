@@ -78,8 +78,33 @@
 //     console.log('Should component update?');
 //     return true;
 //     }
-import React from 'react'
+// import React from 'react'
+// import { useState } from 'react'
+
+// function Sample() {
+//   // let count=0
+//   const [count, setCount]=useState(0)
+  
+//   const increment = () => {
+//        setCount(count + 1)
+//     }
+
+//     const decrement = () => {
+//        setCount(count - 1)
+//     }
+//   return (
+//     <div>
+//       <h1>This is a sample component</h1>
+//       <h2>{count}</h2>
+//       <button style={{backgroundColor:"red",color:"white", width:"100px", height:"30px"}} onClick={increment}>Increment</button>
+//       <button style={{backgroundColor:"yellow", color:"black", width:"100px", height:"30px"}} onClick={decrement}>decrement</button>
+//     </div>
+//   )
+// }
+
+// export default Sample
 import { useState } from 'react'
+import styles from '../Css/app.module.css'
 
 function Sample() {
   // let count=0
@@ -96,8 +121,8 @@ function Sample() {
     <div>
       <h1>This is a sample component</h1>
       <h2>{count}</h2>
-      <button style={{backgroundColor:"red",color:"white", width:"100px", height:"30px"}} onClick={increment}>Increment</button>
-      <button style={{backgroundColor:"yellow", color:"black", width:"100px", height:"30px"}} onClick={decrement}>decrement</button>
+      <button className={styles.btn} onClick={increment}>Increment</button>
+      <button className={styles.btn} onClick={decrement}>decrement</button>
     </div>
   )
 }
